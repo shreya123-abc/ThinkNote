@@ -1,38 +1,178 @@
+body {
+  background-color: #e3f2fd; /* Light blue background for the entire page */
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
 .App {
   text-align: center;
+  margin: 20px auto;
+  max-width: 800px; /* Center the content */
+  background-color: #ffffff; /* White background for the app */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  font-size: 3.5em;
+  color: #1976d2; /* Primary blue color */
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.tagline {
+  font-size: 1.8em;
+  color: #0d47a1; /* Darker blue for tagline */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2.5em;
+  color: #1976d2; /* Primary blue color */
+  margin-top: 30px;
+  border-bottom: 2px solid #1976d2; /* Underline effect */
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.8em;
+  color: #0d47a1; /* Darker blue for subheadings */
+}
+
+p {
+  font-size: 1.2em;
+  color: #555;
+  margin: 10px 0;
+}
+
+.features-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Space between grid items */
+  margin: 20px 0;
+}
+
+.feature-card {
+  background: #bbdefb; /* Light blue background for feature cards */
+  border: 1px solid #90caf9; /* Lighter blue border */
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left; /* Align text to the left */
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.feature-icon {
+  font-size: 2em; /* Increase icon size */
+  margin-bottom: 10px; /* Space between icon and text */
+  color: #1976d2; /* Primary blue color for icons */
+}
+
+.note-input {
+  width: 100%;
+  height: 100px;
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid #90caf9; /* Light blue border */
+  border-radius: 10px;
+  font-size: 1em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: border 0.3s;
+}
+
+.note-input:focus {
+  border: 2px solid #1976d2; /* Highlight border on focus */
+  outline: none; /* Remove default outline */
+}
+
+button {
+  background-color: #1976d2; /* Primary blue color */
   color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 25px;
+  font-size: 1.1em;
+  cursor: pointer;
+  margin: 10px 0;
+  transition: background 0.3s, transform 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #1565c0; /* Darker blue on hover */
+  transform: translateY(-2px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.signup-button {
+  background-color: #28a745; /* Green for sign up */
+}
+
+.signup-button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+.start-button, .stop-button {
+  background-color: #4A90E2; /* Blue color for start button */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  margin: 10px 5px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.start-button:hover {
+  background-color: #357ABD; /* Darker blue on hover */
+}
+
+.stop-button {
+  background-color: #d32f2f; /* Red color for stop button */
+}
+
+.stop-button:hover {
+  background-color: #c62828; /* Darker red on hover */
+}
+
+.send-button {
+  background-color: #4A90E2; /* Blue color for send button */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  margin: 10px 0;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.send-button:hover {
+  background-color: #357ABD; /* Darker blue on hover */
+}
+
+.save-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.save-button:hover {
+  background-color: #45a049; /* Darker green on hover */
 }
